@@ -1,0 +1,4 @@
+- hosts: all
+- name: including role
+  roles:
+    - common
