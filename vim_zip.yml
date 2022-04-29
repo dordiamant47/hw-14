@@ -1,10 +1,8 @@
-- hosts: localhost
-
-  tasks:
-    - name: install zip
-      ansible.builtin.package:
-        name: "{{ item }}"
-        state: present
-      loop:
-        - zip
-        - vim
+---
+- name: install zip
+  ansible.builtin.package: 
+   name: "{{ item }}"
+   state: present
+   loop:
+      - zip
+      - vim
