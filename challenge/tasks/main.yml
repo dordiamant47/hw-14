@@ -1,0 +1,6 @@
+---
+- name: deploy file
+  file:
+    dst: /tmp/test1
+    content: |
+      Hello world!
