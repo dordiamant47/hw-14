@@ -1,6 +1,12 @@
 ---
 - name: deploy file
-  file:
-    dst: /tmp/test1
+  copy:
+    dest: /tmp/test1
     content: |
       Hello world!
+
+- name: deploy file2
+  copy:
+    dest: /tmp/test2
+    content: |
+      This servers hostname is: {{ ansible_hostname }}
